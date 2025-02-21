@@ -3,6 +3,7 @@ updates:
   - package-ecosystem: pip
     directories:
       - /dev/breeze
+      - /dev/airflow
     schedule:
       interval: daily
 
