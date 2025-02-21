@@ -16,7 +16,7 @@ updates:
       provider-one-dependencies:
         patterns:
           - "*"
-    versioning-strategy: widen
+    versioning-strategy: increase
 
   - package-ecosystem: pip
     directories:
@@ -27,4 +27,4 @@ updates:
       provider-two-dependencies:
         patterns:
           - "*"
-    versioning-strategy: widen
+    versioning-strategy: increase
