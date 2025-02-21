@@ -13,7 +13,7 @@ updates:
     schedule:
       interval: daily
     groups:
-      provider-one-dependencies:
+      provider/a/b-dependencies:
         patterns:
           - "*"
     versioning-strategy: increase
@@ -26,7 +26,7 @@ updates:
     schedule:
       interval: daily
     groups:
-      provider-two-dependencies:
+      provider/c/-dependencies:
         patterns:
           - "*"
     versioning-strategy: increase
