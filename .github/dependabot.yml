@@ -13,7 +13,7 @@ updates:
     schedule:
       interval: daily
     groups:
-      provider[a,b]-dependencies:
+      provider[a|b]-dependencies:
         patterns:
           - "*"
 
