@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: pip
+    directories:
+      - /dev/breeze
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directories:
+      - /providers/*/
+    schedule:
+      interval: daily
+    groups:
+      build-system-requires:
+        patterns:
+          - "flit*"
