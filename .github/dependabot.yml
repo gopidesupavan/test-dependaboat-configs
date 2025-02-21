@@ -8,10 +8,21 @@ updates:
 
   - package-ecosystem: pip
     directories:
-      - /providers/*/
+      - /providers/a/
+      - /providers/b/
     schedule:
       interval: daily
     groups:
-      provider-dependencies:
+      provider[a,b]-dependencies:
+        patterns:
+          - "*"
+
+  - package-ecosystem: pip
+    directories:
+      - /providers/c/
+    schedule:
+      interval: daily
+    groups:
+      provider[c]-dependencies:
         patterns:
           - "*"
