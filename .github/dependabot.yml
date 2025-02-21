@@ -17,6 +17,8 @@ updates:
         patterns:
           - "*"
     versioning-strategy: increase
+    allow:
+      - dependency-type: "all"
 
   - package-ecosystem: pip
     directories:
@@ -28,3 +30,5 @@ updates:
         patterns:
           - "*"
     versioning-strategy: increase
+    allow:
+      - dependency-type: "all"
