@@ -3,25 +3,8 @@ updates:
   - package-ecosystem: pip
     directories:
       - /dev/breeze
-    schedule:
-      interval: daily
-
-  - package-ecosystem: pip
-    directories:
       - /providers/a/
       - /providers/b/
-    schedule:
-      interval: daily
-    groups:
-      provider-dependencies:
-        patterns:
-          - "*"
-  - package-ecosystem: pip
-    directories:
       - /providers/c/
     schedule:
       interval: daily
-    groups:
-      provider-dependencies:
-        patterns:
-          - "*"
