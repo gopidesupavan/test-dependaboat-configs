@@ -13,22 +13,15 @@ updates:
     schedule:
       interval: daily
     groups:
-      provider/a/b-dependencies:
+      provider-dependencies:
         patterns:
           - "*"
-    versioning-strategy: auto
-    allow:
-      - dependency-type: "all"
-
   - package-ecosystem: pip
     directories:
       - /providers/c/
     schedule:
       interval: daily
     groups:
-      provider/c/-dependencies:
+      provider-dependencies:
         patterns:
           - "*"
-    versioning-strategy: auto
-    allow:
-      - dependency-type: "all"
